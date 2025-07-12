@@ -1,5 +1,4 @@
-from multiprocessing.spawn import old_main_modules
-
+"""Array Queue implementation"""
 
 class ArrayQueue:
     DEFAULT_CAPACITY = 10

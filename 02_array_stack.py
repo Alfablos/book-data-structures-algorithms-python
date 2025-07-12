@@ -1,3 +1,5 @@
+"""Array Stack implementation"""
+
 from typing import Any, Generator
 
 
@@ -26,9 +28,9 @@ class ArrayStack:
         return self._data.pop()
 
 
-def reverse(l: list[Any]) -> Generator:
+def reverse(li: list[Any]) -> Generator:
     store = ArrayStack()
-    [store.push(e) for e in l]
+    [store.push(e) for e in li]
 
     while not store.is_empty():
         yield store.pop()

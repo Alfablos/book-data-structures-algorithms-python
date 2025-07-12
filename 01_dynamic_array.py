@@ -1,3 +1,5 @@
+"""Dynamic Arrays implementation"""
+
 import ctypes
 
 class DynamicArray:
