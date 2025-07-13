@@ -16,7 +16,7 @@ class _DoublyLinkedListBase:
         self._header = self._Node(None, None, None)
         self._trailer = self._Node(None, None, None)
         self._header._next = self._trailer
-        self._trailer._next = self._header
+        self._trailer._prev = self._header
         self._size = 0
 
     def __len__(self):
